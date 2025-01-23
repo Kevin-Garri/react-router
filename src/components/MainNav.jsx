@@ -11,7 +11,7 @@ function MainNav() {
           <NavLink to="/ChiSiamo">Chi Siamo</NavLink>
         </li>
         <li>
-          <NavLink to="/ListPost">List Post</NavLink>
+          <NavLink to="/ListaPost">Lista Post</NavLink>
         </li>
       </ul>
     </nav>
