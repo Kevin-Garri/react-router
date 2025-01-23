@@ -6,11 +6,19 @@ import ChiSiamo from "./pages/ChiSiamo"
 import ListaPost from "./pages/listaPost"
 
 
-
 function App() {
 
-
-  return
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route Component={DefaultLayout}>
+          <Route path="/" Component={HomePage} />
+          <Route path="/ChiSiamo" Component={ChiSiamo} />
+          <Route path="/ListaPost" Component={ListaPost} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
 
 }
 
