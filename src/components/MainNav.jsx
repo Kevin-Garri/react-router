@@ -8,10 +8,10 @@ function MainNav() {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/ChiSiamo">Chi Siamo</NavLink>
+          <NavLink to="/chi-siamo">Chi Siamo</NavLink>
         </li>
         <li>
-          <NavLink to="/ListaPost">Lista Post</NavLink>
+          <NavLink to="/lista-post">Lista Post</NavLink>
         </li>
       </ul>
     </nav>

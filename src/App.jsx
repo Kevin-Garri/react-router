@@ -13,8 +13,8 @@ function App() {
       <Routes>
         <Route Component={DefaultLayout}>
           <Route path="/" Component={HomePage} />
-          <Route path="/ChiSiamo" Component={ChiSiamo} />
-          <Route path="/ListaPost" Component={ListaPost} />
+          <Route path="/chi-siamo" Component={ChiSiamo} />
+          <Route path="/lista-post" Component={ListaPost} />
         </Route>
       </Routes>
     </BrowserRouter>
