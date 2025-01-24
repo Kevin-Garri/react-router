@@ -7,4 +7,24 @@ const PostDetail = () => {
   const [posts, setPosts] = useState(null);
   const navigate = useNavigate();
 
+  //fetch dei post
+  const fetchPosts = () => {
+    axios
+      .get(`${baseApiUrl}/posts`)
+      .then((res) => {
+        setPosts(res.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching Posts:", error);
+      });
+  };
+
+  //use effect di fetch post
+  useEffect(() => {
+    fetchPosts()
+  }, [])
+
+  return
 }
+
+export default PostDetail
