@@ -25,6 +25,7 @@ const creazionePost = () => {
   //nuovo post
   const gestioneNuovoPost = (e) => {
     e.preventDefault();
+    const newPost = { ...formData };
     axios.post(`${baseApiUrl}/posts`, newPost).then((res) => {
       setFormData(initialFormData);
       navigate("/posts");
