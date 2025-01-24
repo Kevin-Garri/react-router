@@ -1,14 +1,11 @@
-function ChiSiamo() {
-
-
+const ErrorPage = () => {
   return (
-
     <>
       <div className="container my-4 d-flex justify-content-center">
-        <h1>Chi Siamo</h1>
+        ERROR 404 NOT FOUND
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ChiSiamo
+export default ErrorPage;

@@ -27,7 +27,33 @@ const ListaPost = () => {
   return (
 
     <>
-      <h1>Lista Post</h1>
+      <div className="container my-5">
+        <div className="card">
+          <div className="card-body">
+            <h1>Lista Post</h1>
+            <ul className="list-group my-5">
+              {posts === null ? (
+                <h2>Loading...</h2>
+              ) : (
+                posts.map((post) => (
+                  <li
+                    key={post.id}
+                    className="list-group-item d-flex justify-content-between"
+                  >
+                    <span>{post.title}</span>
+                    <Link
+                      className="btn btn-success"
+                      to={`/dettaglio-post/${post.id}`}
+                    >
+                      Vedi dettaglio
+                    </Link>
+                  </li>
+                ))
+              )}
+            </ul>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
